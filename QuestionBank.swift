@@ -13,6 +13,8 @@ class QuestionBank {
     
     // Add questions
     init() {
+        questionList.append(Question(_questionText: "Valentine's day is banned in Saudi Arabia.", _correctAnswer: true))
+        
         questionList.append(Question(_questionText: "A slug\'s blood is green.", _correctAnswer: true))
         
         questionList.append(Question(_questionText: "Approximately one quarter of human bones are in the feet.", _correctAnswer: true))

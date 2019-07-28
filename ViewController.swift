@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  Quizzapp
 //
-//  Created by Matthew Anderson on 25/08/2015.
-//  Copyright (c) 2019 Matthew Anderson. All rights reserved.
+//  Created by Matthew Anderson on 7/28/19.
 //
 
 import UIKit

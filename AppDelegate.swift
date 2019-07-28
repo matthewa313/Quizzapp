@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Quizzapp
 //
-//  Created by Matthew Anderson on 7/28/2019.
-//  Copyright (c) 2019 Matthew Anderson. All rights reserved.
+//  Created by Matthew Anderson on 7/28/19.
 //
 
 import UIKit

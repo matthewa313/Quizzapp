@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let questions = QuestionBank()
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var progressBar: UIView!
@@ -17,10 +19,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let firstQuestion = questions.questionList[0]
+        questionLabel.text = firstQuestion.questionText
     }
 
     @IBAction func answerPressed(_ sender: AnyObject) {
-  
+        if sender.tag == 1 {
+            checkAnswer(pickedAnswer:true)
+        } else {
+            checkAnswer(pickedAnswer:false)
+        }
     }
     
     func updateUI() {
@@ -31,7 +39,15 @@ class ViewController: UIViewController {
         
     }
     
-    func checkAnswer() {
+    func checkAnswer(pickedAnswer: Bool) {
+        
+        let correctAnswer = questions.questionList[0].correctAnswer
+        
+        if correctAnswer == pickedAnswer {
+            // correct
+        } else {
+            // incorrect
+        }
         
     }
     
